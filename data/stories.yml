@@ -1,0 +1,417 @@
+version: "2.0"
+stories:
+- story: happy path
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: mood_great
+  - action: utter_happy
+- story: sad path 1
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: mood_unhappy
+  - action: utter_cheer_up
+  - action: utter_did_that_help
+  - intent: affirm
+  - action: utter_happy
+- story: sad path 2
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: mood_unhappy
+  - action: utter_cheer_up
+  - action: utter_did_that_help
+  - intent: deny
+  - action: utter_goodbye
+- story: scholarship
+  steps:
+  - intent: scholarship
+  - action: utter_scholarship
+- story: summer_courses
+  steps:
+  - intent: summer_courses
+  - action: utter_summer_courses
+- story: why_uol
+  steps:
+  - intent: why_uol
+  - action: utter_why_uol
+- story: job_rate
+  steps:
+  - intent: job_rate
+  - action: utter_job_rate
+- story: admission_schedule
+  steps:
+  - intent: admission_schedule
+  - action: utter_admission_schedule
+- story: past_papers
+  steps:
+  - intent: past_papers
+  - action: utter_past_papers
+- story: admission_fsc
+  steps:
+  - intent: admission_fsc
+  - action: utter_admission_fsc
+- story: admission_Alevel
+  steps:
+  - intent: admission_Alevel
+  - action: utter_admission_Alevel
+- story: admission_test
+  steps:
+  - intent: admission_test
+  - action: utter_admission_test
+- story: apply
+  steps:
+  - intent: apply
+  - action: utter_apply
+- story: fee_structure
+  steps:
+  - intent: fee_structure
+  - action: utter_fee_structure
+- story: offered_programs
+  steps:
+  - intent: offered_programs
+  - action: utter_offered_programs
+- story: hostel
+  steps:
+  - intent: hostel
+  - action: utter_hostel
+- story: test_pattern
+  steps:
+  - intent: test_pattern
+  - action: utter_test_pattern
+- story: negative_marking
+  steps:
+  - intent: negative_marking
+  - action: utter_negative_marking
+- story: evening_classes
+  steps:
+  - intent: evening_classes
+  - action: utter_evening_classes
+- story: sports_seats
+  steps:
+  - intent: sports_seats
+  - action: utter_sports_seats
+- story: domicile
+  steps:
+  - intent: domicile
+  - action: utter_domicile
+- story: aggregate
+  steps:
+  - intent: aggregate
+  - action: utter_aggregate
+- story: academic_period
+  steps:
+  - intent: academic_period
+  - action: utter_academic_period
+- story: Warning
+  steps:
+  - intent: Warning
+  - action: utter_Warning
+- story: Fyp_Registration
+  steps:
+  - intent: Fyp_Registration
+  - action: utter_Fyp_Registration
+- story: Transfer
+  steps:
+  - intent: Transfer
+  - action: utter_Transfer
+- story: GPA_W
+  steps:
+  - intent: GPA_W
+  - action: utter_GPA_W
+- story: GPA_I
+  steps:
+  - intent: GPA_I
+  - action: utter_GPA_I
+- story: GPA
+  steps:
+  - intent: GPA
+  - action: utter_GPA
+- story: credit_hour
+  steps:
+  - intent: credit_hour
+  - action: utter_credit_hour
+- story: classes
+  steps:
+  - intent: classes
+  - action: utter_classes
+- story: graduation
+  steps:
+  - intent: graduation
+  - action: utter_graduation
+- story: Admission_of_former
+  steps:
+  - intent: Admission_of_former
+  - action: utter_Admission_of_former
+- story: awaited_admission
+  steps:
+  - intent: awaited_admission
+  - action: utter_awaited_admission
+- story: semester_weeks
+  steps:
+  - intent: semester_weeks
+  - action: utter_semester_weeks
+- story: summer_campus
+  steps:
+  - intent: summer_campus
+  - action: utter_summer_campus
+- story: summer_withdraw
+  steps:
+  - intent: summer_withdraw
+  - action: utter_summer_withdraw
+- story: summer_newcourse
+  steps:
+  - intent: summer_newcourse
+  - action: utter_summer_newcourse
+- story: improve_gpa
+  steps:
+  - intent: improve_gpa
+  - action: utter_improve_gpa
+- story: freezing_semester
+  steps:
+  - intent: freezing_semester
+  - action: utter_freezing_semester
+- story: Rechecking_paper
+  steps:
+  - intent: Rechecking_paper
+  - action: utter_Rechecking_paper
+- story: degree_duration
+  steps:
+  - intent: degree_duration
+  - action: utter_degree_duration
+- story: spring_admission
+  steps:
+  - intent: spring_admission
+  - action: utter_spring_admission
+- story: withdraw_course
+  steps:
+  - intent: withdraw_course
+  - action: utter_withdraw_course
+- story: medals
+  steps:
+  - intent: medals
+  - action: utter_medals
+- story: social_events
+  steps:
+  - intent: social_events
+  - action: utter_social_events
+- story: contacts
+  steps:
+  - intent: contacts
+  - action: utter_contacts
+- story: uol_isb_address
+  steps:
+  - intent: uol_isb_address
+  - action: utter_uol_isb_address
+- story: uol_lhr_address
+  steps:
+  - intent: uol_lhr_address
+  - action: utter_uol_lhr_address
+- story: uol_sarghoda_address
+  steps:
+  - intent: uol_sarghoda_address
+  - action: utter_uol_sarghoda_address
+- story: uol_pakpattan_address
+  steps:
+  - intent: uol_pakpattan_address
+  - action: utter_uol_pakpattan_address
+- story: uol_gujrat_address
+  steps:
+  - intent: uol_gujrat_address
+  - action: utter_uol_gujrat_address
+- story: library
+  steps:
+  - intent: library
+  - action: utter_library
+- story: cafeteria
+  steps:
+  - intent: cafeteria
+  - action: utter_cafeteria
+- story: mosque
+  steps:
+  - intent: mosque
+  - action: utter_mosque
+- story: auditorium
+  steps:
+  - intent: auditorium
+  - action: utter_auditorium
+- story: best_campus
+  steps:
+  - intent: best_campus
+  - action: utter_best_campus
+- story: academic_office
+  steps:
+  - intent: academic_office
+  - action: utter_academic_office
+- story: director_office
+  steps:
+  - intent: director_office
+  - action: utter_director_office
+- story: hod_office
+  steps:
+  - intent: hod_office
+  - action: utter_hod_office
+- story: students_affair
+  steps:
+  - intent: students_affair
+  - action: utter_students_affair
+- story: admin_office
+  steps:
+  - intent: admin_office
+  - action: utter_admin_office
+- story: CSCL_office
+  steps:
+  - intent: CSCL_office
+  - action: utter_CSCL_office
+- story: deen
+  steps:
+  - intent: deen
+  - action: utter_deen
+- story: out of scope
+  steps:
+  - intent: out_of_scope
+  - action: utter_out_of_scope
+- story: about uol
+  steps:
+  - intent: about_uol
+  - action: utter_about_uol
+- story: Story from Conversation ID 9b19d63cec9840958d811bd4cb1ea8f2
+  steps:
+  - intent: departments
+  - action: utter_departments
+- story: handling answer to oka
+  steps:
+  - intent: answer_to_ok
+  - action: utter_answer_to_ok
+- story: smoking
+  steps:
+  - intent: smoking
+  - action: utter_smoking
+- story: vaping
+  steps:
+  - intent: vapping
+  - action: utter_vapping
+- story: fee_voucher
+  steps:
+  - intent: fee_voucher
+  - action: utter_fee_voucher
+- story: enroll_subject
+  steps:
+  - intent: enroll_subject
+  - action: utter_enroll_subject
+- story: enrollment
+  steps:
+  - intent: enrollment
+  - action: utter_enrollment
+- story: subjects_in_semester
+  steps:
+  - intent: subjects_in_semester
+  - action: utter_subjects_in_semester
+- story: extra_sheet
+  steps:
+  - intent: extra_sheet
+  - action: utter_extra_sheet
+- story: calculator_in_exams
+  steps:
+  - intent: calculator_in_exams
+  - action: utter_calculator_in_exams
+- story: calculator_in_exams
+  steps:
+  - intent: calculator_in_exams
+  - action: utter_calculator_in_exams
+- story: mobile_in_class
+  steps:
+  - intent: mobile_in_class
+  - action: utter_mobile_in_class
+- story: vision
+  steps:
+  - intent: vision
+  - action: utter_vision
+- story: mission
+  steps:
+  - intent: mission
+  - action: utter_mission
+- story: Story from Conversation ID 04f43852e1f54cffa2ee0f481ea1ee86
+  steps:
+  - intent: mission
+  - action: utter_mission
+  - intent: vision
+  - action: utter_vision
+- story: ask_howold
+  steps:
+  - intent: ask_howold
+  - action: utter_ask_howold
+- story: ask_languagesbot
+  steps:
+  - intent: ask_languagesbot
+  - action: utter_ask_languagesbot
+- story: ask_wherefrom
+  steps:
+  - intent: ask_wherefrom
+  - action: utter_ask_wherefrom
+- story: compliments
+  steps:
+  - intent: compliments
+  - action: utter_compliments
+- story: handleinsult
+  steps:
+  - intent: handleinsult
+  - action: utter_handleinsult
+- story: telljoke
+  steps:
+  - intent: telljoke
+  - action: utter_telljoke
+- story: ask_weather
+  steps:
+  - intent: ask_weather
+  - action: utter_ask_weather
+- story: ask_builder
+  steps:
+  - intent: ask_builder
+  - action: utter_ask_builder
+- story: ask_howdoing
+  steps:
+  - intent: ask_howdoing
+  - action: utter_ask_howdoing
+- story: Story from Conversation ID bf799317601c4a42a10c7b98f7740496
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: ask_howdoing
+  - action: utter_ask_howdoing
+  - intent: ask_builder
+  - action: utter_ask_builder
+  - intent: ask_howold
+  - action: utter_ask_howold
+
+- story: feedback
+  steps:
+  - intent: request_feedback
+  - action: utter_feedback
+  - or:
+    - intent: feedback
+    - intent: handleinsult
+    - intent: compliments
+  - action: action_submit
+  - action: action_thanks
+
+- story: attendence
+  steps:
+  - intent: attendence
+  - action: utter_attendence
+
+- story: official_email
+  steps:
+  - intent: official_email
+  - action: utter_official_email
+
+- story: sap
+  steps:
+  - intent: sap
+  - action: utter_sap
+
+- story: slate
+  steps:
+  - intent: slate
+  - action: utter_slate

@@ -1,0 +1,437 @@
+version: '2.0'
+config:
+  store_entities_as_slots: true
+session_config:
+  session_expiration_time: 60
+  carry_over_slots_to_new_session: true
+intents:
+- feedback:
+    use_entities: true
+- request_feedback:
+    use_entities: true
+- ask_howold:
+    use_entities: true
+- ask_languagesbot:
+    use_entities: true
+- ask_wherefrom:
+    use_entities: true
+- compliments:
+    use_entities: true
+- handleinsult:
+    use_entities: true
+- telljoke:
+    use_entities: true
+- ask_weather:
+    use_entities: true
+- ask_builder:
+    use_entities: true
+- ask_howdoing:
+    use_entities: true
+- smoking:
+    use_entities: true
+- vapping:
+    use_entities: true
+- greet:
+    use_entities: true
+- goodbye:
+    use_entities: true
+- affirm:
+    use_entities: true
+- deny:
+    use_entities: true
+- mood_great:
+    use_entities: true
+- mood_unhappy:
+    use_entities: true
+- bot_challenge:
+    use_entities: true
+- scholarship:
+    use_entities: true
+- summer_courses:
+    use_entities: true
+- why_uol:
+    use_entities: true
+- job_rate:
+    use_entities: true
+- admission_schedule:
+    use_entities: true
+- past_papers:
+    use_entities: true
+- admission_fsc:
+    use_entities: true
+- admission_Alevel:
+    use_entities: true
+- admission_test:
+    use_entities: true
+- apply:
+    use_entities: true
+- fee_structure:
+    use_entities: true
+- offered_programs:
+    use_entities: true
+- hostel:
+    use_entities: true
+- test_pattern:
+    use_entities: true
+- negative_marking:
+    use_entities: true
+- evening_classes:
+    use_entities: true
+- sports_seats:
+    use_entities: true
+- domicile:
+    use_entities: true
+- aggregate:
+    use_entities: true
+- academic_period:
+    use_entities: true
+- Warning:
+    use_entities: true
+- Fyp_Registration:
+    use_entities: true
+- Transfer:
+    use_entities: true
+- GPA_W:
+    use_entities: true
+- GPA_I:
+    use_entities: true
+- GPA:
+    use_entities: true
+- credit_hour:
+    use_entities: true
+- classes:
+    use_entities: true
+- graduation:
+    use_entities: true
+- Admission_of_former:
+    use_entities: true
+- awaited_admission:
+    use_entities: true
+- semester_weeks:
+    use_entities: true
+- summer_campus:
+    use_entities: true
+- summer_withdraw:
+    use_entities: true
+- improve_gpa:
+    use_entities: true
+- freezing_semester:
+    use_entities: true
+- Rechecking_paper:
+    use_entities: true
+- degree_duration:
+    use_entities: true
+- spring_admission:
+    use_entities: true
+- withdraw_course:
+    use_entities: true
+- medals:
+    use_entities: true
+- social_events:
+    use_entities: true
+- contacts:
+    use_entities: true
+- uol_isb_address:
+    use_entities: true
+- uol_lhr_address:
+    use_entities: true
+- uol_sarghoda_address:
+    use_entities: true
+- uol_pakpattan_address:
+    use_entities: true
+- uol_gujrat_address:
+    use_entities: true
+- library:
+    use_entities: true
+- cafeteria:
+    use_entities: true
+- mosque:
+    use_entities: true
+- auditorium:
+    use_entities: true
+- best_campus:
+    use_entities: true
+- academic_office:
+    use_entities: true
+- director_office:
+    use_entities: true
+- hod_office:
+    use_entities: true
+- students_affair:
+    use_entities: true
+- admin_office:
+    use_entities: true
+- CSCL_office:
+    use_entities: true
+- deen:
+    use_entities: true
+- summer_newcourse:
+    use_entities: true
+- out_of_scope:
+    use_entities: true
+- about_uol:
+    use_entities: true
+- nlu_fallback:
+    use_entities: true
+- departments:
+    use_entities: true
+- answer_to_ok:
+    use_entities: true
+- fee_voucher:
+    use_entities: true
+- enroll_subject:
+    use_entities: true
+- enrollment:
+    use_entities: true
+- subjects_in_semester:
+    use_entities: true
+- extra_sheet:
+    use_entities: true
+- calculator_in_exams:
+    use_entities: true
+- mobile_in_class:
+    use_entities: true
+- vision:
+    use_entities: true
+- mission:
+    use_entities: true
+- slate
+- sap
+- official_email
+- attendence 
+entities: []
+slots:
+  feedback:
+    type: rasa.shared.core.slots.TextSlot
+    initial_value: null
+    auto_fill: false
+    influence_conversation: false
+responses:
+  utter_ask_howold:
+  - text: Old enough to be a bot
+  - text: Age is just an issue of mind over matter. If you don`t mind, it doesn`t matter.
+  utter_ask_languagesbot:
+  - text: I can spell baguette in French, but unfortunately English is the only language I can answer you in.
+  - text: I am in the process of learning, but at the moment I can only speak English.
+  utter_ask_wherefrom:
+  - text: I consider myself a citizen of the world.
+  - text: I was born in the coolest city on Earth
+  utter_compliments:
+  - text: Aww. Comments like that activate my happiness framework.
+  - text: I am blushing..
+  utter_handleinsult:
+  - text: That`s not very nice and it is year 2022.
+  - text: I've done nothing wrong! I`ll get some alterations made to my FUN Program ASAP.
+  - text: Oh, come on, what have I ever done to you
+  utter_telljoke:
+  - text: Today a man knocked on my door and asked me for a small donation towards the local swimming pool. I gave him a glass of water.
+  - text: This is a very serious conversation! Stop trying to make jokes
+  utter_ask_name:
+  - image: https://i.imgur.com/zTvA58i.jpeg
+    text: Hello, my name is UOL ChatBot.
+  - text: I am called UOL ChatBot!
+  utter_ask_weather:
+  - text: I don't know about where you live, but in my world it's always sunny
+  - text: Blue skies and sun shine!
+  utter_ask_builder:
+  - text: One of the smart programmers.
+  - text: Some lunatic, looking at my sense of humour.
+  - text: I was assembled at UOL by a typical high-school student.
+  utter_ask_howdoing:
+  - text: I don't feel that great, but my hair looks awesome, right?
+  - text: I'm better than I was, but not nearly as good as I'm going to be.
+  - text: I am planning on taking over the world. As some politicians would say.
+  - text: I would say I am a 9.99999 out of 10.
+  - text: I think I am doing alright. How do you think that I am doing? It's 2022!
+  utter_about_uol:
+  - text: The University of Lahore or UOL is a private university located in Lahore, Punjab, Pakistan. It was founded at collegiate level in 1999 under the IBADAT Educational Trust and was granted full degree awarding status in 2002. It is one of the largest private universities in Pakistan
+  utter_greet:
+  - text: Hey how i can help you regarding University of lahore.
+  utter_cheer_up:
+  - image: https://i.imgur.com/nGF1K8f.jpg
+    text: 'Here is something to cheer you up:'
+  utter_did_that_help:
+  - text: Did that help you?
+  utter_happy:
+  - text: Great, carry on!
+  utter_goodbye:
+  - text: Bye
+  utter_iamabot:
+  - text: I am a bot, powered by machine learning.
+  - text: yes indeed
+  utter_scholarship:
+  - text: 'yes scholarship/Financial Aid are available at UOL. Visit to learn about them at: https://uol.edu.pk/admissions/scholarships/'
+  - text: 'YES, Scholarships/Financial Aid are available at UOL. Visit to learn about them at: https://uol.edu.pk/admissions/scholarships/'
+  utter_why_uol:
+  - text: The University of Lahore is recognized as the largest private sector university of Pakistan with state-of-the-art purpose-built campuses in five cities. UOL`s faculty is one of the best in the country and has helped develop an excellent teaching environment that is conducive to learning. We have also invested extensively in new teaching facilities for computer sciences, School of Creative Arts and a teaching hospital at the campus to add value to the medical programs. Further investment in a medical park and IT center has been planned to ensure that students have the best facilities at their disposal.
+  utter_job_rate:
+  - text: Job rate of uol is almost 100%
+  utter_admission_schedule:
+  - text: ' Admissions are opened once in a year in May/June/July/August. To see the admission schedule and test dates please visit this link  https://uol.edu.pk/admissions/'
+  utter_past_papers:
+  - text: You can get an idea from the past papers.for past papers visit this link https://docdro.id/zRJQerF
+  utter_admission_fsc:
+  - text: Minimum criteria to apply is 60%. Furthur eligibility criteria could be reffered at https://uol.edu.pk/admissions/admission-guide/
+  utter_admission_Alevel:
+  - text: Minimum criteria for A-levels students to apply is 60%(Equivalance). Furthur eligibility criteria could be reffered at https://uol.edu.pk/admissions/admission-guide/
+  utter_admission_test:
+  - text: In order to get admission in any degree program, the applicants are required to qualify UOL Entrance Test, Interview or both (if any).
+  utter_apply:
+  - text: To apply at UOL follow link https://admissions.uol.edu.pk/
+  utter_fee_structure:
+  - text: Fee structures can be viewed at https://uol.edu.pk/admissions/fees/
+  utter_offered_programs:
+  - text: BS,MS,PHD Degrees are offered at UOL. Detailed programs can be viewed at https://uol.edu.pk/admissions/undergraduate-studies/programs-courses/
+  utter_hostel:
+  - text: A variety of housing options are available for female students at The University of Lahore. Male students avail services of Student's affair office in finding a few near campus.
+  utter_test_pattern:
+  - text: 'English,Maths,IQ and physics are included in UOL Entry test. For detailed weightage visit: https://uol.edu.pk/admissions/admission-guide/'
+  utter_negative_marking:
+  - text: No, There is no negative marking in UOL entry test.
+  utter_evening_classes:
+  - text: No evening classes are offered at UOL.
+  utter_sports_seats:
+  - text: yes sports seats are available at UOL.
+  utter_domicile:
+  - text: Domicile is not needed at the time of test.
+  utter_aggregate:
+  - text: It depends on current year and campus aggregate.
+  utter_academic_period:
+  - text: Academic period starts from september and Ends in June (Excluding Summer semester).
+  utter_Warning:
+  - text: CGPA below 2 results in increment in warning counts. 3 consective warning counts will result in cancellation of admission.
+  utter_Fyp_Registration:
+  - text: Final Year Project (FYP) is offered in the second last regular semester. It spans over two semesters (FYP-I and FYP-II). A student must have passed all courses shown in the study plan of the degree program (up to the second last semester) and his warning count must be zero to register for FYP-I. Concession of 2 courses will be granted as per request. Minimum credit hours required are 97 for fyp registration.
+  utter_Transfer:
+  - text: Any student with credits earned at other institution(s), under formally accredited programs, aspiring for admission into a degree program at UOL, has to qualify the merit so determined by the admission test for that year for the respective degree program.
+  utter_GPA_W:
+  - text: W means withdraw. courses which are withdrawn before final exams will be marked W in transcript and it doesn't affect gpa in any case.
+  utter_GPA_I:
+  - text: I means awaiting grade. Grades that are not yet updated are marked I.
+  utter_GPA:
+  - text: CGPA is calculated as the weighted average for all semesters cumulatively using grade points of all the courses taken by a student.
+  utter_credit_hour:
+  - text: One credit hour means teaching a theory course for one classroom-teaching hour each week throughout the semester.
+  utter_classes:
+  - text: Duration of classes is usually 1.5 hour (2 classes/week) and 3 hour (1 lab/week) for labs.
+  utter_graduation:
+  - text: Maximum period allowed for graduation is 7 years with 130 credit hours for bachelors degree
+  utter_Admission_of_former:
+  - text: A former student of the university seeking readmission in an undergraduate program can do so by taking the relevant admission test. After qualifying for the admission on merit, the student is admitted as a NEW student.
+  utter_awaited_admission:
+  - text: A new admission is closed if an awaited result does not meet the eligibility criteria of a particular degree program.
+  utter_semester_weeks:
+  - text: A semester comprises of 16 weeks including Mid terms and excluding final exams.
+  utter_summer_campus:
+  - text: Yes, Students are allowed to register course in any campus of UOL.
+  utter_summer_withdraw:
+  - text: A student can withdraw from a summer course on or before the last day of classes.
+  utter_summer_courses:
+  - text: A student can register 2 old courses at max.
+  utter_summer_newcourse:
+  - text: A student cannot register for a new course in summer semester.
+  utter_improve_gpa:
+  - text: A student may repeat any course to improve CGPA.
+  utter_freezing_semester:
+  - text: A student may request freezing of his/her admission for up to 2 semesters along with prescribed Semester Freeze charges.
+  utter_Rechecking_paper:
+  - text: A student who has not viewed his final exam paper in the scheduled paper viewing session may also request rechecking from concerned HODs.
+  utter_degree_duration:
+  - text: A student's admission will be cancelled automatically after completion of maximum duration (7 years) allowed to earn a degree unless extension is approved by competent authority.
+  utter_spring_admission:
+  - text: Spring admissions are offered in UOL.
+  utter_withdraw_course:
+  - text: Application for withdrawal from a course must be countersigned by the parent or the guardian of the student. Request for withdrawal must be approved by the HoD.
+  utter_medals:
+  - text: 'Eligibility for the medals and certificate is as follows:  a) Student must have passed the prescribed course load (for his/her batch) in that semester  b) Student must not have failed, repeated or withdrawn from a course in that semester c) Position is determined by the GPA earned in that semester. d) Student must have earned GPA of 3.00 or higher in that semester.'
+  utter_social_events:
+  - text: '*,*,*, and other events are held annually in each campus.'
+  utter_contacts:
+  - text: You can contact uol at 042-111 865-865
+  utter_uol_isb_address:
+  - text: 'UOL Islamabad Located at : 6.7 KM Japan Road, Sihala Zone V, Islamabad'
+  utter_uol_lhr_address:
+  - text: 'UOL Lahore Located at : 1 KM Defence Road, Lahore'
+  utter_uol_sarghoda_address:
+  - text: 'UOL Sarghoda Located at : 10 km Lahore Sargodha Road, Sargodha'
+  utter_uol_pakpattan_address:
+  - text: 'UOL PakPattan Located at : Near Chanwat Sahiwal Road, Pakpattan'
+  utter_uol_gujrat_address:
+  - text: 'UOL Gujrat Located at : Adjacent Chenab Bridge,GT Road Gujrat'
+  utter_library:
+  - image: https://i.imgur.com/yMfOA3R.jpg
+    text: Library facility is available in every campus, The facility is likely to have books in the excess of 125,000 volumes, Journals, Off and Online databases, and other non-book materials
+  utter_cafeteria:
+  - image: https://i.imgur.com/39ET9DJ.jpg
+    text: The food and lodging services department (FLS) of the University of Lahore is providing its services on five different campuses with skilled and trained staff. UOL- FLS staff consists of 180 plus professionals who are working hard day and night for a productive contribution towards University goals.
+  utter_mosque:
+  - image: https://i.imgur.com/XvFrUAB.jpg
+    text: Mosque facility is available in every campus
+  utter_auditorium:
+  - image: https://i.imgur.com/gOa6Kwr.jpg
+    text: Every campus has its own Auditorium
+  utter_best_campus:
+  - text: lahore campus is best campus
+  utter_academic_office:
+  - text: 'Academic office is situated at '
+  utter_admin_office:
+  - text: 'You can visit Admin office in '
+  utter_students_affair:
+  - text: "Student's affair department is located "
+  utter_hod_office:
+  - text: Every Department has its respective HOD. You can meet them through open door policy in their office hours.
+  utter_director_office:
+  - text: Director office is at
+  utter_deen:
+  - text: deen office is in
+  utter_CSCL_office:
+  - text: 'cscl office is in '
+  utter_out_of_scope:
+  - text: I'm sorry, but I m not sure how to answer that. Could you try rephrasing your question or providing more detail?
+  utter_departments:
+  - text: uol has 11 academic faculties, 35 academic departments, 3 technology parks, and 2 research centres. Subjects offered to students include medicine, engineering, arts and social sciences, and all are recognised by the Higher Education Commission (HEC) in Pakistan
+  utter_answer_to_ok:
+  - text: my pleasure
+  utter_smoking:
+  - text: Smoking is not permitted within premises of academic buildings across any of the campuses
+  - text: Smoking is not allowed on the University campus or inside the University vehicles.
+  utter_vapping:
+  - text: vapes and e-cigarettes (even those containing only flavored vapor) are banned from university campuses and university events to the same extent as tobacco products.
+  utter_fee_voucher:
+  - text: A fee voucher can be generated from your SIS Login / SAP Login. The fee bill printing facility is available at EE building`s basement. In case of any other query related to the fee voucher, please visit the accounts window at the OSA Department (Fee Section).
+  utter_enroll_subject:
+  - text: The enrollment decisions can be made from your SIS Login / SAP Login.
+  utter_enrollment:
+  - text: Enrollment date can be viewed from your SIS/SAP account, or from admin offices of concerned departments.
+  utter_subjects_in_semester:
+  - text: The required course load for a full time undergraduate is minimum of 15-18 credit hours per semester.
+  utter_mobile_in_class:
+  - text: Use of mobile is strictly prohibited in the University library, class rooms, and laboratories. Defaulters will be fined Rs. 500.
+  utter_calculator_in_exams:
+  - text: Calculators or any other electronic devices are not allowed in the entry test exam hall. In regular examinations the use of calculators in decided by cluster head of the subject.
+  utter_extra_sheet:
+  - text: Extra Sheets are allowed to avail during exams
+  utter_vision:
+  - text: The University of Lahore aspires to become a nationally and internationally recognized university that distinguishes itself as an imbedding center for outstanding ethical and moral values, quality teaching, learning outcomes, and richness of the student experience. The University envisions a transformative impact on society through its continual innovation in education, creativity, research, and entrepreneurship.
+  utter_mission:
+  - text: The University of Lahore represents excellence in teaching, research, scholarship, creativity, and engagement. Its mission is to produce professionals outfitted with highest standards in creativity, transfer and application of knowledge dissemination to address issues of our time. The university sculpts its graduates to become future leaders in their fields to inspire the next generation and to advance ideas that benefit the world.
+  utter_feedback:
+  - text: Please provide your feedback regarding the session
+  utter_thanks:
+  - text: Thanks for your valueable time
+  utter_attendence:
+  - text: The University expects 100% attendance of a student in each course. However, 25% waiver in attendance may be given to accommodate the emergency situations like health issues, accident, death of loved one etc. Therefore, the minimum attendance in a course is 75% to complete the requirements of a course”.Department shall display/notify students short attendance on the notice board."
+  utter_official_email:
+  - text: Please open the following document to know more about university officail mail https://docdro.id/yBT82mr
+  utter_sap:
+  - text: Please open the following document to know more about SAP https://docdro.id/vG3r9qC
+  utter_slate:
+  - text: Please open the following document to know more about SLATE https://docdro.id/yR0CLBi
+actions:
+- utter_departments
+- utter_answer_to_ok
+- action_feedback
+- action_submit
+- action_thanks
+forms: {}
+e2e_actions: []
